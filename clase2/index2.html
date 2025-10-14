@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=desktop, initial-scale=1.0">
+    <title>DevJobs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-nav">
+            <h1>
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#3d80d6"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
+            DevJobs
+            </h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Empleos</a>
+                <a href="#">Empresas</a>
+                <a href="#">Salarios</a>
+            </nav>
+        </div>
+        <div class="profile">
+            <a href="#">Subir mi CV</a>
+            <img src="./ces.jpg" alt="Perfil">
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Encuentra tu proximo trabajo</h1>
+            <h4>Explora miles de oportunidades en el sector tecnologico</h4>
+        </section>
+        <section id="search-section">
+            <form role="search">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#3e49e0"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                <input  required type="text" placeholder="Buscar trabajos, empresas o habilidades">
+            </form>
+        <section id="filters">
+            <select id="job-type" name="job-type">
+                    <option selected disabled>Selecciona un tipo</option>
+                    <option value="remoto">Remoto</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="hibrido">Híbrido</option>
+            </select>
+            <select name="" id="">
+                <option value="">Ubicacion</option>
+            </select>
+            <select name="" id="">
+                <option value="">Tipo de contrato</option>
+            </select>
+            <select name="" id="">
+                <option value="">Nivel de experiencia</option>
+            </select>
+        </section>
+            <section id="search-results">
+                <h2>Resultados de la búsqueda</h2>
+                <div id="results">
+                    <div id="job-list">
+                        <div id="job-item-template" class="job-item">
+                            <div>
+                                <h3 class="job-title">Ingeriero de software</h3>
+                                <p class="company-name">Tech Solutions Inc. | Remoto</p>
+                                <p class="job-description">Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.</p>
+                            </div>
+                            <div id="job-actions">
+                                <button class="apply-button">Aplicar</button>
+                                <p class="posted-date">Publicado hace 2 días</p>
+                            </div>
+                        </div>
+                        <div class="job-item">
+                            <div>
+                                <h3 class="job-title">Desarrollador Frontend</h3>
+                                <p class="company-name">Innovatech | Híbrido</p>
+                                <p class="job-description">Se busca desarrollador frontend con experiencia en HTML, CSS y frameworks modernos como React o Vue.js. El candidato debe tener un buen ojo para el diseño y ser capaz de crear interfaces de usuario atractivas y funcionales.</p>
+                            </div>
+                            <div id="job-actions">
+                                <button class="apply-button">Aplicar</button>
+                                <p class="posted-date">Publicado hace 5 días</p>
+                            </div>
+                        </div>
+                        <div class="job-item">
+                            <div>
+                                <h3 class="job-title">Administrador de Sistemas</h3>
+                                <p class="company-name">DataCorp | Presencial</p>
+                                <p class="job-description">Estamos buscando un administrador de sistemas con experiencia en la gestión de servidores Linux y Windows. El candidato ideal debe tener conocimientos en redes, seguridad informática y ser capaz de resolver problemas técnicos de manera eficiente.</p>
+                            </div>
+                            <div id="job-actions">
+                                <button class="apply-button">Aplicar</button>
+                                <p class="posted-date">Publicado hace 1 semana</p>
+                            </div>
+                        </div>
+                        <div class="job-item">
+                            <div>
+                                <h3 class="job-title">Científico de Datos</h3>
+                                <p class="company-name">AnalyticsPro | Remoto</p>
+                                <p class="job-description">Buscamos un científico de datos con experiencia en análisis estadístico, machine learning y manejo de grandes volúmenes de datos. El candidato debe ser capaz de trabajar con Python, R y herramientas de visualización de datos.</p>
+                            </div>
+                            <div id="job-actions">
+                                <button class="apply-button">Aplicar</button>
+                                <p class="posted-date">Publicado hace 3 días</p>
+                            </div>
+                        </div>
+                        <!-- Más ofertas de empleo pueden ser añadidas aquí -->
+                         <section id="pagination">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                            <nav>
+                               <a href="#">1</a>
+                               <a href="#">2</a>
+                               <a href="#">3</a>
+                               <a href="#">4</a>
+                               <a href="#">5</a>
+                            </nav>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                         </section>
+                    </div>
+                </div>
+            </section>
+    </main>
+        <footer>
+        <small>&copy; 2025 Devjobs. Todos los derechos reservados.</small>
+    </footer>
+</body>
+</html>
